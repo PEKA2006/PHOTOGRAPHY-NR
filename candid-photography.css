@@ -1,0 +1,228 @@
+/* candid-photography.css */
+/**/
+.booking-cta {
+  background: linear-gradient(120deg, #7209b7, #f72585);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  animation: fadeInUp 1.2s ease;
+  border-radius: 0 0 0px 0px;
+  box-shadow: 0 -6px 20px rgba(0,0,0,0.15);
+}
+
+.cta-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.cta-button {
+  background-color: #ffda00;
+  color: #333;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #fff700;
+  transform: scale(1.05);
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #3a0ca3, #7209b7);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.navbar a {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #6a11cb;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.intro p {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #444;
+  margin: 1rem 0 3rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.features ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  font-size: 1.2rem;
+  line-height: 2;
+  animation: fadeIn 2s ease-in;
+}
+
+.features li::before {
+  content: "\2713";
+  color: #2575fc;
+  margin-right: 12px;
+}
+
+.service-details {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.service-details:hover {
+  transform: scale(1.01);
+}
+
+.btn-cart, .add-to-cart {
+  display: block;
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  margin: 2rem auto;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cart:hover, .add-to-cart:hover {
+  background: #1a5edc;
+  transform: scale(1.1);
+}
+
+.gallery-section {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+  animation: fadeIn 2s ease-in;
+}
+
+.gallery-section h2 {
+  color: #6a11cb;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+footer.site-footer {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1rem;
+}
+
+.site-footer .footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-footer .footer-links {
+  margin-top: 0.8rem;
+}
+
+.site-footer .footer-links a {
+  color: #ffffff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.site-footer .footer-links a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+.navbar {
+  background: linear-gradient(90deg, #3a0ca3, #7209b7);
+}
+.navbar-brand img {
+  height: 40px;
+}
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  transition: 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+  text-decoration: underline;
+}

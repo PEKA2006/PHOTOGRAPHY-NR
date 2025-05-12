@@ -1,0 +1,256 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(90deg, #3a0ca3, #7209b7);
+}
+.navbar-brand img {
+  height: 40px;
+}
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  transition: 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+  text-decoration: underline;
+}
+.btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+.btn-outline-light:hover {
+  background-color: #ffd700;
+  color: #000;
+}
+
+/* Hero Carousel */
+.carousel-item img {
+  height: 80vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Section Headings */
+h2 {
+  font-weight: bold;
+  color: #3a0ca3;
+}
+
+/* Who We Are */
+section.text-center p.lead {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Services & Portfolio */
+.service-card,
+.portfolio-card {
+  transition: transform 0.3s;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.service-card:hover,
+.portfolio-card:hover {
+  transform: scale(1.05);
+}
+.service-card h5 {
+  color: #7209b7;
+  font-weight: 600;
+}
+
+/* Button Links */
+.link-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #3a0ca3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+.link-button:hover {
+  background-color: #5f0fba;
+  color: #fff;
+}
+
+/* Ready to Book Section */
+.ready-book {
+  background: #7209b7;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+.ready-book h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.btn-book {
+  background: #ffd700;
+  color: #000;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+.btn-book:hover {
+  background: #ffe066;
+  color: #000;
+}
+/* Colorful Animated Background */
+.animated-booking {
+  background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Smooth Entrance Animation */
+.animated-booking h2,
+.animated-booking p,
+.animated-booking .btn-book,
+.about-section,
+.services-section,
+.featured-work {
+  animation: fadeInUp 1.2s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glowing Call-to-Action Button */
+.pulse-glow {
+  background-color: #ffd700;
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 15px #ffd700;
+  transition: all 0.3s ease-in-out;
+}
+.pulse-glow:hover {
+  background-color: #fff44f;
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #ffe066;
+}
+
+/* Rainbow Buttons */
+.rainbow-button {
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.rainbow-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 110, 196, 0.7);
+}
+
+/* Section Color Enhancements */
+.about-section {
+  background: linear-gradient(to right, #f8f9fa, #e0e0ff);
+  padding: 50px 0;
+}
+.services-section {
+  background: #f2f0ff;
+}
+.featured-work {
+  background: #fff7f0;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-item img {
+    height: 60vh;
+  }
+}
+/**/
+.footer-section {
+  background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585);
+  color: white;
+  padding: 60px 20px 30px;
+  font-family: 'Segoe UI', sans-serif;
+  animation: gradientShift 15s ease infinite;
+}
+
+.footer-section .footer-title {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.footer-section p, .footer-section a {
+  color: #ffffffcc;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-divider {
+  border-top: 1px solid #ffffff33;
+  margin: 20px 0;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffd700;
+}

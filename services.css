@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+/* Navbar Styles */
+
+.navbar-brand img {
+  height: 40px;
+}
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #3a0ca3, #7209b7);
+  background-size: 600% 600%;
+  animation: gradientBG 12s ease infinite;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffda00 !important;
+  text-shadow: 1px 1px 5px #000;
+}
+/**/
+
+.booking-cta {
+  background: linear-gradient(120deg, #7209b7, #f72585);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  animation: fadeInUp 1.2s ease;
+  border-radius: 0 0 0px 0px;
+  box-shadow: 0 -6px 20px rgba(0,0,0,0.15);
+}
+
+.cta-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.cta-button {
+  background-color: #ffda00;
+  color: #333;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #fff700;
+  transform: scale(1.05);
+}
+/**/
+.footer-section {
+  background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585);
+  color: white;
+  padding: 60px 20px 30px;
+  font-family: 'Segoe UI', sans-serif;
+  animation: gradientShift 15s ease infinite;
+}
+
+.footer-section .footer-title {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.footer-section p, .footer-section a {
+  color: #ffffffcc;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-divider {
+  border-top: 1px solid #ffffff33;
+  margin: 20px 0;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffd700;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+  .cta-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Headings */
+h2.text-center {
+  font-weight: bold;
+  color: #3a0ca3;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Service Cards */
+
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+/* Enhanced View More Button */
+/* Shared Button Base */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* Primary Gradient Style */
+.btn-primary {
+  background: linear-gradient(135deg, #f72585, #7209b7);
+  color: white;
+  box-shadow: 0 5px 15px rgba(114, 9, 183, 0.5);
+}
+
+/* Hover background animation */
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #ffda00;
+  transition: left 0.4s ease;
+  z-index: 0;
+}
+
+/* Reveal animation */
+.btn-primary:hover::before {
+  left: 0;
+}
+
+/* Content on top of animated background */
+.btn-primary span {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+/* Move text slightly on hover */
+.btn-primary:hover span {
+  transform: translateX(5px);
+}
+
+/* Optional: scale button on hover */
+.btn-primary:hover {
+  color: #333;
+  transform: scale(1.05);
+}
+
+/* Service Cards */
+.service-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  background: linear-gradient(135deg, #ffffff, #f0f0ff);
+  position: relative;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-color: #f72585;
+}
+.card-title {
+  color: #7209b7;
+}
+.card-text {
+  color: #444;
+}
+/* Buttons */
+.btn-primary {
+  background-color: #3a0ca3;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #7209b7;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  font-size: 0.9rem;
+}
+    
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

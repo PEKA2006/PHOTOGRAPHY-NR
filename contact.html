@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | NR Photography</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="logo.png" alt="NR Photography Logo" height="40">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item active"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="contact-section">
+    <div class="contact-info animated fadeInLeft">
+      <h2>Contact Us</h2>
+
+      <p><strong><i class="fas fa-phone-alt"></i> Phone:</strong>
+        <a href="tel:+13129128321" class="contact-link animated-link">(312) 912-8321</a></p>
+
+      <p><strong><i class="fas fa-envelope"></i> Email:</strong>
+        <a href="mailto:booking@organicheadshots.com" class="contact-link animated-link">booking@organicheadshots.com</a></p>
+
+      <br>
+      <div class="info-block animated fadeUp">
+        <p><strong><i class="fas fa-map-marker-alt"></i> Address</strong></p>
+        <p>1821 West Hubbard Street, Suite 105</p>
+        <p>Chicago, IL 60622</p>
+        <p>Our studio is wheelchair accessible</p>
+      </div>
+
+      <br>
+      <div class="info-block animated fadeUp delay">
+        <p><strong><i class="fas fa-clock"></i> Appointment Hours</strong></p>
+        <p>Monday - Friday | 9 am - 7 pm</p>
+        <p>Saturday - Sunday | 10 am - 4 pm</p>
+      </div>
+    </div>
+
+    <div class="contact-form animated fadeInRight">
+      <form>
+        <div class="form-group">
+          <label for="first-name">First Name <span>*</span></label>
+          <input type="text" id="first-name" name="first-name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span>*</span></label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject <span>*</span></label>
+          <input type="text" id="subject" name="subject" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message <span>*</span></label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </section>
+</body>
+<footer class="footer-section">
+  <div class="container">
+    <div class="row text-center text-md-left">
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-title">NR Photography</h5>
+        <p>Capturing moments, crafting memories. Let’s make your story unforgettable.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-title">Contact Us</h5>
+        <p>Email: <a href="mailto:info@nrphotography.com">info@nrphotography.com</a></p>
+        <p>Phone: +91 98765 43210</p>
+        <div class="social-icons mt-3">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="text-center small">&copy; 2025 NR Photography. All rights reserved.</div>
+  </div>
+</footer>
+</html>

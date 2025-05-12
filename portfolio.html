@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NR Photography | Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+
+     <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="logo.png" alt="NR Photography Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item active"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Portfolio Section -->
+  <section class="portfolio-section">
+    <div class="container">
+      <h2 class="portfolio-title">Portfolio</h2>
+      <p class="portfolio-subtitle">See our awesome work!</p>
+
+      <!-- Filter Buttons -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="portraits">Portraits and Headshots</button>
+        <button class="filter-btn" data-category="lifestyle">Lifestyle</button>
+        <button class="filter-btn" data-category="group">Group</button>
+      </div>
+
+      <!-- Portfolio Images -->
+      <div class="portfolio-grid">
+        <div class="portfolio-item portraits"><img src="portflio/p1.jpg" alt="Portrait"></div>
+        <div class="portfolio-item lifestyle"><img src="portflio/l1.jpg" alt="Lifestyle"></div>
+        <div class="portfolio-item group"><img src="portflio/g1.jpg" alt="Group"></div>
+        <div class="portfolio-item portraits"><img src="portflio/p2.jpg" alt="Portrait"></div>
+        <div class="portfolio-item lifestyle"><img src="portflio/l2.jpg" alt="Lifestyle"></div>
+        <div class="portfolio-item group"><img src="portflio/g3.jpg" alt="Group"></div>
+        <div class="portfolio-item group"><img src="portflio/g4.jpg" alt="Group"></div>
+        <div class="portfolio-item group"><img src="portflio/g5.jpg" alt="Group"></div>
+        <div class="portfolio-item group"><img src="portflio/g6.jpg" alt="Group"></div>
+        <div class="portfolio-item group"><img src="portflio/g7.jpg" alt="Group"></div>
+        <div class="portfolio-item group"><img src="portflio/g8.jpg" alt="Group"></div>
+        <div class="portfolio-item portraits"><img src="portflio/p3.jpg" alt="Portrait"></div>
+        <div class="portfolio-item portraits"><img src="portflio/p4.jpg" alt="Portrait"></div>
+        <div class="portfolio-item portraits"><img src="portflio/p5.jpg" alt="Portrait"></div>
+        <div class="portfolio-item portraits"><img src="portflio/p6.jpg" alt="Portrait"></div>
+        <div class="portfolio-item portraits"><img src="portflio/p7.jpg" alt="Portrait"></div>
+        <div class="portfolio-item portraits"><img src="portflio/p8.jpg" alt="Portrait"></div>
+        <div class="portfolio-item lifestyle"><img src="portflio/l3.jpg" alt="Lifestyle"></div>
+        <div class="portfolio-item lifestyle"><img src="portflio/l4.jpg" alt="Lifestyle"></div>
+        <div class="portfolio-item lifestyle"><img src="portflio/l5.jpg" alt="Lifestyle"></div>
+        <div class="portfolio-item lifestyle"><img src="portflio/l6.jpg" alt="Lifestyle"></div>
+        <div class="portfolio-item lifestyle"><img src="portflio/l7.jpg" alt="Lifestyle"></div>
+        <div class="portfolio-item lifestyle"><img src="portflio/l8.jpg" alt="Lifestyle"></div>
+        v
+
+        
+
+        
+
+      </div>
+    </div>
+  </section>
+<section class="booking-cta">
+  <div class="cta-content">
+    <h2>Ready to Book Your Photoshoot?</h2>
+    <p>Let’s capture moments that last a lifetime. Whether it’s a wedding, event, portrait, or branding session, NR Photography is here to bring your vision to life.</p>
+    <a href="contact.html" class="cta-button">Book Now</a>
+  </div>
+</section>
+
+  <!-- Script for filtering -->
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelector('.filter-btn.active').classList.remove('active');
+        button.classList.add('active');
+
+        const category = button.getAttribute('data-category');
+
+        portfolioItems.forEach(item => {
+          item.style.display = (category === 'all' || item.classList.contains(category))
+            ? 'block'
+            : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+<!-- Footer -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="row text-center text-md-left">
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-title">NR Photography</h5>
+        <p>Capturing moments, crafting memories. Let’s make your story unforgettable.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-title">Contact Us</h5>
+        <p>Email: <a href="mailto:info@nrphotography.com">info@nrphotography.com</a></p>
+        <p>Phone: +91 98765 43210</p>
+        <div class="social-icons mt-3">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="text-center small">&copy; 2025 NR Photography. All rights reserved.</div>
+  </div>
+</footer>
+
+</html>

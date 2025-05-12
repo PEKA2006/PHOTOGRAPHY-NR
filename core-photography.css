@@ -1,0 +1,224 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #fefcea, #f1f1f1);
+  margin: 0;
+  padding: 0;
+  color: #333;
+  animation: fadeInPage 1.2s ease-in;
+}
+
+@keyframes fadeInPage {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #3a0ca3, #7209b7);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+  text-shadow: 0 0 8px #ffd700;
+  text-decoration: underline;
+}
+/**/
+.booking-cta {
+  background: linear-gradient(120deg, #7209b7, #f72585);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  animation: fadeInUp 1.2s ease;
+  border-radius: 0 0 0px 0px;
+  box-shadow: 0 -6px 20px rgba(0,0,0,0.15);
+}
+
+.cta-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.cta-button {
+  background-color: #ffda00;
+  color: #333;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #fff700;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+  .cta-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  margin: 2rem 0 0.5rem;
+  animation: fadeSlide 1.5s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.lead {
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  animation: fadeSlide 1.5s ease-in-out 0.2s;
+}
+
+/* Cards Section */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+  background: linear-gradient(to right, #f7971e, #ffd200);
+  border: none;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  margin-top: 2rem;
+  border-radius: 50px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-to-cart:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 210, 0, 0.5);
+}
+
+/* Footer */
+footer.site-footer {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1rem;
+  animation: fadeInFooter 1.2s ease-in;
+}
+
+@keyframes fadeInFooter {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.site-footer .footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-footer .footer-links {
+  margin-top: 0.8rem;
+}
+
+.site-footer .footer-links a {
+  color: #ffffff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.site-footer .footer-links a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+.btn-cart, .add-to-cart {
+  display: block;
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  margin: 2rem auto;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cart:hover, .add-to-cart:hover {
+  background: #1a5edc;
+  transform: scale(1.1);
+}
